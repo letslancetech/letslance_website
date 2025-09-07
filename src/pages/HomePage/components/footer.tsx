@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#f8f9fa] text-black">
       <div className="w-full">
-        <div
+        {/* <div
           className="mx-auto hidden lg:block"
           style={{
             width: "100%",
@@ -31,7 +31,7 @@ export default function Footer() {
             borderLeft: "160px solid transparent",
             borderRight: "160px solid transparent",
           }}
-        ></div>
+        ></div> */}
       </div>
       {/* Newsletter Section */}
       <div className="relative flex flex-col items-center justify-center px-4 py-16">
