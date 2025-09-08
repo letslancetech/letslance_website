@@ -81,12 +81,12 @@ export default function Footer() {
               innovation.
             </p>
 
-            {/* place to add backed by Innow8 apps in some styled way*/}
+            {/* place to add backed by Innow8 apps in black text with* italic font-style */}
             <div className="mt-4">
-              <span className="text-primary">Backed by &nbsp;
-                <a href="https://innow8apps.com/" className=" cursor-pointer underline" target="_blank" rel="noopener noreferrer">Innow8 Apps</a>
+              <span className="text-black text-sm italic">Backed by
+                <a href="https://innow8apps.com/" className=" cursor-pointer " target="_blank" rel="noopener noreferrer"> Innow8 Apps</a>
               </span>
-              </div>
+            </div>
           </div>
 
           {/* Quick Links */}
