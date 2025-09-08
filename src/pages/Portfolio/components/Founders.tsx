@@ -16,6 +16,14 @@ import Natours from "../../../assets/portfolio/Natours.png";
 import BigwigPly from "../../../assets/portfolio/BigwigPly.png";
 import Mantra from "../../../assets/portfolio/Mantra.png";
 import GridFlow from "../../../assets/portfolio/GridFlow.png";
+import MarketersClique from "../../../assets/portfolio/MarketersClique.png";
+import ThePlanetReserve from "../../../assets/portfolio/ThePlanetReserve.png";
+import Silisoul from "../../../assets/portfolio/Silisoul.png";
+import GoAmigo from "../../../assets/portfolio/GoAmigo.png";
+import Fantom from "../../../assets/portfolio/Fantom.png";
+import DropiGo from "../../../assets/portfolio/DropiGo.png";
+import Finzo from "../../../assets/portfolio/Finzo.png";
+
 const founders = [
   {
     name: "01",
@@ -101,6 +109,55 @@ const founders = [
     title: "GridFlow",
     description:
       "GridFlow is a smart EV charging platform developed by LetsLance to revolutionize sustainable mobility by tackling the infrastructure gap in electric vehicle adoption. The client wanted a seamless experience for EV drivers, a centralized dashboard for operators, and customizable tools for fleet and property managers. To address these goals, we built a robust, real-time monitoring system, integrated smart charging schedules, enabled payment processing, and developed a white-label app platform—delivering accessible, reliable, and intelligent EV charging solutions across global markets.",
+  },
+  {
+    name: "13",
+    image: MarketersClique,
+    title: "MarketersClique",
+    description:
+      "MarketersClique is a community-based platform designed for social media marketers to connect, learn, and grow, leveraging AI-powered tools to provide a personalized experience and data-driven insights. It offers a space for freelancers, agency professionals, and strategists to engage in expert-led discussions and access curated resources. The platform is designed to help marketers overcome challenges, accelerate their learning with practical, AI-enhanced insights, and stay ahead of the curve in the ever-evolving social media landscape.",
+  },
+  {
+    name: "14",
+    image: ThePlanetReserve,
+    title: "THE PLANET RESERVE ",
+    description:
+      "The Planet Reserve is a technology-driven carbon registry that empowers businesses, governments, and individuals to reduce carbon emissions. It focuses on nature-based climate action programs like reforestation and sustainable agriculture to restore the environment. The organization also emphasizes community involvement and provides a transparent registry system for carbon credit transactions.",
+  },
+  {
+    name: "15",
+    image: Silisoul,
+    title: "SILISOUL ",
+    description:
+      "Silisoul is a streetwear brand that offers a range of clothing for both men and women. Their collection includes oversized t-shirts, joggers, sweatshirts, and cargo trousers. They focus on relaxed and comfortable fits, with many items featuring graphic prints.",
+  },
+  {
+    name: "16",
+    image: GoAmigo,
+    title: "GoAmigo",
+    description:
+      "GoAmigo is a comprehensive bike rental platform that connects users with nearby rental dealers, providing a seamless booking experience for users and an efficient management system for bike dealers. The platform is designed to operate as a two-sided marketplace.",
+  },
+  {
+    name: "17",
+    image: Fantom,
+    title: "Fantom ",
+    description:
+      "Fantom is a high-performance, scalable, and secure contract platform. It is designed to overcome the limitations of previous generation blockchain platforms. Fantom's a BFT consensus mechanism allows it to be much faster and cheaper than older technologies, while also being highly secure.",
+  },
+  {
+    name: "18",
+    image: DropiGo,
+    title: "DropiGo",
+    description:
+      "DropiGo is an AI-powered, on-demand delivery platform for the Canadian market, offering a seamless and transparent experience for customers and a reliable income source for delivery agents. Using AI for route optimization and real-time updates, DropiGo aims to solve common delivery challenges and become Canada's top choice for deliveries.",
+  },
+  {
+    name: "19",
+    image: Finzo,
+    title: "Finzo ",
+    description:
+      "Finzo is a comprehensive digital banking platform for the Indian market, focused on delivering a secure and modern financial experience. It allows users to open an account in minutes, conduct seamless UPI payments, and manage utility recharges. The platform also offers unique products like high-interest 'Smart Fixed Deposits' and an agent program for earning commissions through referrals.",
   },
 ];
 const FaLinkedin = FaLinkedinRaw as unknown as React.FC<{ size?: number }>;
