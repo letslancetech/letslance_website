@@ -80,6 +80,13 @@ export default function Footer() {
               outsourcing, designed to elevate your business with precision and
               innovation.
             </p>
+
+            {/* place to add backed by Innow8 apps in some styled way*/}
+            <div className="mt-4">
+              <span className="text-primary">Backed by &nbsp;
+                <a href="https://innow8apps.com/" className=" cursor-pointer underline" target="_blank" rel="noopener noreferrer">Innow8 Apps</a>
+              </span>
+              </div>
           </div>
 
           {/* Quick Links */}
