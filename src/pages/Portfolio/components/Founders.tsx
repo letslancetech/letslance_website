@@ -4,157 +4,194 @@ import "aos/dist/aos.css";
 import founderBg from "../../../assets/lanceImages/founderBg.png";
 import { FaLinkedin as FaLinkedinRaw } from "react-icons/fa";
 import keshavGarg from "../../../assets/lanceImages/keshavGarg.png";
-import animeta from "../../../assets/portfolio/animeta.png"
-import planetReserve from "../../../assets/portfolio/planet-reserve.png"
-import mbbs from "../../../assets/portfolio/mbbs-reserve.png";
-import krishiyan from "../../../assets/portfolio/krishiyan.png";
-import Ideavault from "../../../assets/portfolio/Ideavault.png";
-import roarink from "../../../assets/portfolio/roarink.png";
-import businessUnlimited from "../../../assets/portfolio/businessUnlimited.png";
-import EnhancePT from "../../../assets/portfolio/EnhancePT.png";
-import Natours from "../../../assets/portfolio/Natours.png";
-import BigwigPly from "../../../assets/portfolio/BigwigPly.png";
-import Mantra from "../../../assets/portfolio/Mantra.png";
-import GridFlow from "../../../assets/portfolio/GridFlow.png";
-import MarketersClique from "../../../assets/portfolio/MarketersClique.png";
-import ThePlanetReserve from "../../../assets/portfolio/ThePlanetReserve.png";
-import Silisoul from "../../../assets/portfolio/Silisoul.png";
-import GoAmigo from "../../../assets/portfolio/GoAmigo.png";
-import Fantom from "../../../assets/portfolio/Fantom.png";
-import DropiGo from "../../../assets/portfolio/DropiGo.png";
-import Finzo from "../../../assets/portfolio/Finzo.png";
+import animeta_left from "../../../assets/portfolio/animeta_left.png";
+import animeta_right from "../../../assets/portfolio/animeta_right.png";
+import planetReserve_left from "../../../assets/portfolio/tps_left.png";
+import planetReserve_right from "../../../assets/portfolio/tps_right.png";
+import mbbs_left from "../../../assets/portfolio/mbbs-reserve.png";
+import mbbs_right from "../../../assets/portfolio/mbbs-reserve.png";
+import krishiyan_left from "../../../assets/portfolio/krishiyan_left.png";
+import krishiyan_right from "../../../assets/portfolio/krishiyan_right.png";
+import Ideavault_left from "../../../assets/portfolio/ideavault_left.png";
+import Ideavault_right from "../../../assets/portfolio/ideavault_right.png";
+import roarink_left from "../../../assets/portfolio/roarink_left.png";
+import roarink_right from "../../../assets/portfolio/roarink_right.png";
+import businessUnlimited_left from "../../../assets/portfolio/bu_left.png";
+import businessUnlimited_right from "../../../assets/portfolio/bu_right.png";
+import EnhancePT_left from "../../../assets/portfolio/enhancept_left.png";
+import EnhancePT_right from "../../../assets/portfolio/enhancept_right.png";
+import Natours_left from "../../../assets/portfolio/natours_left.png";
+import Natours_right from "../../../assets/portfolio/natours_right.png";
+import BigwigPly_left from "../../../assets/portfolio/bigwig_left.png";
+import BigwigPly_right from "../../../assets/portfolio/bigwig_right.png";
+import Mantra_left from "../../../assets/portfolio/organic_left.png";
+import Mantra_right from "../../../assets/portfolio/organic_right.png";
+import GridFlow_left from "../../../assets/portfolio/gridflow_left.png";
+import GridFlow_right from "../../../assets/portfolio/gridflow_right.png";
+import MarketersClique_left from "../../../assets/portfolio/marketers_left.png";
+import MarketersClique_right from "../../../assets/portfolio/marketers_right.png";
+import ThePlanetReserve_left from "../../../assets/portfolio/tps_left.png";
+import ThePlanetReserve_right from "../../../assets/portfolio/tps_right.png";
+import Silisoul_left from "../../../assets/portfolio/silisoul_left.png";
+import Silisoul_right from "../../../assets/portfolio/silisoul_right.png";
+import GoAmigo_left from "../../../assets/portfolio/goamigo_left.png";
+import GoAmigo_right from "../../../assets/portfolio/goamigo_right.png";
+import Fantom_left from "../../../assets/portfolio/fantom_left.png";
+import Fantom_right from "../../../assets/portfolio/fantom_right.png";
+import DropiGo_left from "../../../assets/portfolio/dropigo_left.png";
+import DropiGo_right from "../../../assets/portfolio/dropigo_right.png";
+import Finzo_left from "../../../assets/portfolio/finzo_left.png";
+import Finzo_right from "../../../assets/portfolio/finzo_right.png";
 
 const founders = [
   {
-    name: "01",
-    image: animeta,
+    number: "01",
+    imageLeft: animeta_left,
+    imageRight: animeta_right,
     title: "Animeta",
     description:
       "Animeta is an intelligent livestock healthcare app developed by LetsLance to empower farmers with quick and accurate animal disease diagnosis. The client required customized diagnostic flows for different animal types, a robust database for storing diverse conditions, and an easy-to-use interface suitable for rural connectivity. To meet these needs, we implemented PostgreSQL for efficient condition tracking, built real-time chatbot support for instant assistance, and designed a responsive, user-friendly interface that works seamlessly in low-bandwidth environments.",
   },
   {
-    name: "02",
-    image: planetReserve,
+    number: "02",
+    imageLeft: planetReserve_left,
+    imageRight: planetReserve_right,
     title: "The Planet Reserve",
     description:
       "The Planet Reserve is a next-gen climate-tech platform designed by us to accelerate global sustainability efforts. The client needed a powerful, transparent system to track emissions, verify climate actions, and support decentralized environmental projects. We delivered a solution powered by advanced dMRV technology, enabling real-time emissions tracking, transparent climate unit issuance, and zero-fee access for developers to promote inclusive green action.",
   },
   {
-    name: "03",
-    image: mbbs,
+    number: "03",
+    imageLeft: mbbs_left,
+    imageRight: mbbs_right,
     title: "The MBBS Planet",
     description:
       "LetsLance created the MBBS Planet, a comprehensive NEET counselling platform to simplify the medical admission journey for aspiring students. The client sought an AI-powered system capable of delivering accurate college predictions and flawless choice filling. We delivered a robust solution featuring intelligent predictors, real-time mentorship, and personalised counselling tools, offering end-to-end support that has earned the trust of thousands of medical aspirants across the country.",
-    linkedin: "https://www.linkedin.com/in/janesmith",
   },
   {
-    name: "04",
-    image: EnhancePT,
+    number: "04",
+    imageLeft: EnhancePT_left,
+    imageRight: EnhancePT_right,
     title: "Enhance PT",
     description:
       "Enhance PT is a personalized fitness and wellness platform built to support seniors, new mothers, and those recovering from injuries. The client needed age-specific programs and a safe, supportive training environment. We delivered a human-first solution led by certified trainers, offering tailored programs like senior mobility, pre/post-natal fitness, and recovery training. Backed by Fitness Australia standards, Enhance PT promotes progress without judgment—fostering a truly inclusive fitness community.",
   },
   {
-    name: "05",
-    image: Natours,
+    number: "05",
+    imageLeft: Natours_left,
+    imageRight: Natours_right,
     title: "Natours",
     description:
       "Natours is an immersive travel booking platform designed to connect adventure seekers with nature through curated tour experiences. The client needed a visually captivating website with detailed tour listings, user testimonials, and a seamless booking flow. To achieve this, we built a responsive, tour-focused UI showcasing highlights like 'The Sea Explorer' and 'The Forest Hiker,' integrated interactive sections for user engagement, and optimized form-based booking for different group sizes—all crafted to inspire users to explore the outdoors.",
   },
   {
-    name: "06",
-    image: krishiyan,
+    number: "06",
+    imageLeft: krishiyan_left,
+    imageRight: krishiyan_right,
     title: "KrishiYan",
     description:
       "KrishiYan is a comprehensive agri-tech platform developed by LetsLance to empower farmers and FPOs by digitizing farm operations and improving market access. The client required a centralized solution to manage clustering, training, procurement, and logistics seamlessly. We delivered a cloud-powered mobile-web dashboard ecosystem integrated with local hubs—ensuring real-time connectivity between buyers, operations, and continuous farmer education across regions.",
   },
   {
-    name: "07",
-    image: Ideavault,
+    number: "07",
+    imageLeft: Ideavault_left,
+    imageRight: Ideavault_right,
     title: "Ideavault",
     description:
       "Ideavault is a modern investment platform crafted to simplify US stock investing for the Hong Kong market. The client aimed to merge expert investment strategies with the accessibility of fractional investing. We built a seamless, user-friendly solution featuring professionally managed portfolios, dividend tracking, and real-time updates—empowering both novice and seasoned investors to make informed, confident decisions.",
   },
   {
-    name: "08",
-    image: BigwigPly,
+    number: "08",
+    imageLeft: BigwigPly_left,
+    imageRight: BigwigPly_right,
     title: "Big Wig",
     description:
       "Big Wig is a high-performance plywood manufacturing solution developed by LetsLance to support modern construction needs with strength, precision, and export-ready quality. The client required scalable production for various plywood types, consistent finish, and ISO-certified quality control. To meet these goals, we set up advanced conveyor assembly lines, installed jumbo paper impregnated plants for a mirror-like finish, and implemented automated cutting tools, ensuring flawless manufacturing, perfect sizing, and global market readiness.",
   },
   {
-    name: "09",
-    image: roarink,
+    number: "09",
+    imageLeft: roarink_left,
+    imageRight: roarink_right,
     title: "Roarink",
     description:
       "Roarink is a dynamic political engagement platform built to transform how politicians connect with citizens in real time. The client requested a responsive solution to break down traditional communication barriers and foster more transparent dialogue. We developed a robust app ecosystem using Firebase, featuring live updates, personalized user profiles, and intuitive engagement tools—engineered to handle high user volumes seamlessly, even during peak political events.",
   },
   {
-    name: "10",
-    image: Mantra,
+    number: "10",
+    imageLeft: Mantra_left,
+    imageRight: Mantra_right,
     title: "Organics Mantra",
     description:
       "Organics Mantra is a sustainable farm-to-door delivery platform designed to provide fresh, organic produce to consumers across Hyderabad. The project focused on ensuring traceable sourcing from local farmers, seamless app-based ordering, and eco-conscious logistics. We enabled a smooth user experience with seasonal offers, loyalty rewards, and simplified order management. The system also supports backend tools for farm evaluation, real-time inventory updates, and surprise audits to maintain high purity standards.",
   },
   {
-    name: "11",
-    image: businessUnlimited,
+    number: "11",
+    imageLeft: businessUnlimited_left,
+    imageRight: businessUnlimited_right,
     title: "Business Unlimited",
     description:
       "Business Unlimited is a tech-driven coaching platform created by LetsLance to support entrepreneurs and professionals in achieving structured personal and business growth. The client needed a comprehensive system that could unify key growth areas into one seamless experience. We delivered a platform that blends proven global coaching methodologies with intuitive tools for wealth creation, team leadership, and time management—empowering users to master their full growth journey in one place.",
   },
   {
-    name: "12",
-    image: GridFlow,
+    number: "12",
+    imageLeft: GridFlow_left,
+    imageRight: GridFlow_right,
     title: "GridFlow",
     description:
       "GridFlow is a smart EV charging platform developed by LetsLance to revolutionize sustainable mobility by tackling the infrastructure gap in electric vehicle adoption. The client wanted a seamless experience for EV drivers, a centralized dashboard for operators, and customizable tools for fleet and property managers. To address these goals, we built a robust, real-time monitoring system, integrated smart charging schedules, enabled payment processing, and developed a white-label app platform—delivering accessible, reliable, and intelligent EV charging solutions across global markets.",
   },
   {
-    name: "13",
-    image: MarketersClique,
+    number: "13",
+    imageLeft: MarketersClique_left,
+    imageRight: MarketersClique_right,
     title: "MarketersClique",
     description:
       "MarketersClique is a community-based platform designed for social media marketers to connect, learn, and grow, leveraging AI-powered tools to provide a personalized experience and data-driven insights. It offers a space for freelancers, agency professionals, and strategists to engage in expert-led discussions and access curated resources. The platform is designed to help marketers overcome challenges, accelerate their learning with practical, AI-enhanced insights, and stay ahead of the curve in the ever-evolving social media landscape.",
   },
   {
-    name: "14",
-    image: ThePlanetReserve,
+    number: "14",
+    imageLeft: ThePlanetReserve_left,
+    imageRight: ThePlanetReserve_right,
     title: "THE PLANET RESERVE ",
     description:
       "The Planet Reserve is a technology-driven carbon registry that empowers businesses, governments, and individuals to reduce carbon emissions. It focuses on nature-based climate action programs like reforestation and sustainable agriculture to restore the environment. The organization also emphasizes community involvement and provides a transparent registry system for carbon credit transactions.",
   },
   {
-    name: "15",
-    image: Silisoul,
+    number: "15",
+    imageLeft: Silisoul_left,
+    imageRight: Silisoul_right,
     title: "SILISOUL ",
     description:
       "Silisoul is a streetwear brand that offers a range of clothing for both men and women. Their collection includes oversized t-shirts, joggers, sweatshirts, and cargo trousers. They focus on relaxed and comfortable fits, with many items featuring graphic prints.",
   },
   {
-    name: "16",
-    image: GoAmigo,
+    number: "16",
+    imageLeft: GoAmigo_left,
+    imageRight: GoAmigo_right,
     title: "GoAmigo",
     description:
       "GoAmigo is a comprehensive bike rental platform that connects users with nearby rental dealers, providing a seamless booking experience for users and an efficient management system for bike dealers. The platform is designed to operate as a two-sided marketplace.",
   },
   {
-    name: "17",
-    image: Fantom,
+    number: "17",
+    imageLeft: Fantom_left,
+    imageRight: Fantom_right,
     title: "Fantom ",
     description:
       "Fantom is a high-performance, scalable, and secure contract platform. It is designed to overcome the limitations of previous generation blockchain platforms. Fantom's a BFT consensus mechanism allows it to be much faster and cheaper than older technologies, while also being highly secure.",
   },
   {
-    name: "18",
-    image: DropiGo,
+    number: "18",
+    imageLeft: DropiGo_left,
+    imageRight: DropiGo_right,
     title: "DropiGo",
     description:
       "DropiGo is an AI-powered, on-demand delivery platform for the Canadian market, offering a seamless and transparent experience for customers and a reliable income source for delivery agents. Using AI for route optimization and real-time updates, DropiGo aims to solve common delivery challenges and become Canada's top choice for deliveries.",
   },
   {
-    name: "19",
-    image: Finzo,
+    number: "19",
+    imageLeft: Finzo_left,
+    imageRight: Finzo_right,
     title: "Finzo ",
     description:
       "Finzo is a comprehensive digital banking platform for the Indian market, focused on delivering a secure and modern financial experience. It allows users to open an account in minutes, conduct seamless UPI payments, and manage utility recharges. The platform also offers unique products like high-interest 'Smart Fixed Deposits' and an agent program for earning commissions through referrals.",
@@ -179,39 +216,76 @@ export default function Founders() {
           The Visionaries Behind LetsLance dfdfdf
         </h2> */}
 
-        <div className="space-y-10">
+        <div className="space-y-16">
           {founders.map((founder, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center justify-center gap-10 text-center md:text-left ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              }`}
+              className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-50 border-blur border-4"
+              data-aos="fade-up"
             >
-            
-              <div
-                className="max-w-xl"
-                data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+              {/* Top Curved Header Section */}
+              <div 
+                className="h-[100px] bg-white flex justify-between border items-center px-8"
+                style={{ 
+                  height: 100,
+                  background: '#FFFFFF',
+                  borderBottomLeftRadius: 50,
+                  borderBottomRightRadius: 50,
+                }}
               >
-                <h3 className="text-8xl font-normal text-[#D8D8D8] mb-5">
-                  {founder.name}
-                </h3>
-                <p className="text-5xl mb-2 text-[#0B132A] font-medium">{founder.title}</p>
-                <p className="mb-4 text-[#4F5665] text-lg">{founder.description}</p>
-                {/* <a
-                  href={founder.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-blue-500"
+                <h3 
+                  className="text-4xl lg:text-5xl font-normal text-[#0B132A] leading-tight" 
+                  style={{ fontFamily: 'Londrina Solid, sans-serif' }}
                 >
-                  <FaLinkedin size={32} />
-                </a> */}
+                  {founder.title}
+                </h3>
+                <span 
+                  className="text-4xl lg:text-5xl font-normal text-[#0B132A]"
+                  style={{ fontFamily: 'SF Distant Galaxy AltOutline, sans-serif' }}
+                >
+                  {founder.number}
+                </span>
               </div>
-              <img
-                src={founder.image}
-                alt={founder.title}
-                className="h-50 w-[40%]"
-                data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-              />
+
+              {/* Two Column Layout */}
+              <div className="flex flex-col lg:flex-row">
+                {/* Left Column - Text and Left Image */}
+                <div className="flex-1 p-8">
+                  <p 
+                    className="text-base leading-relaxed mb-8" 
+                    style={{ 
+                      fontFamily: 'Syne, sans-serif',
+                      color: '#1F1F1FD9'
+                    }}
+                  >
+                    {founder.description}
+                  </p>
+                  
+                  {/* Left Image */}
+                  <div className="relative group">
+                    <img
+                      src={founder.imageLeft}
+                      alt={`${founder.title} left`}
+                      className="w-full h-auto object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                      data-aos="fade-right"
+                      data-aos-delay="100"
+                    />
+                  </div>
+                </div>
+
+                {/* Right Column - Right Image */}
+                <div className="flex-1 p-8">
+                  <div className="relative group">
+                    <img
+                      src={founder.imageRight}
+                      alt={`${founder.title} right`}
+                      className="w-full h-auto object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                      data-aos="fade-left"
+                      data-aos-delay="200"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
