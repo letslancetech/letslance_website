@@ -7,7 +7,7 @@ import Footer from "../HomePage/components/footer";
 
 export default function Portfolio() {
   return (
-    <section>
+    <section className="bg-[#FCFCFC] min-h-screen pt-24">
       <Hero />
       {/* <Insight />
       <AllInsight /> */}

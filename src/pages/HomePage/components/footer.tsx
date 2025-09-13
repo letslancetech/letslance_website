@@ -9,7 +9,7 @@ import linkedin from "../../../assets/lanceImages/linkedin.png";
 import React from "react";
 export default function Footer() {
   return (
-    <footer className="bg-[#f8f9fa] text-black">
+    <footer className="bg-[#FCFCFC] text-black">
       <div className="w-full">
         {/* <div
           className="mx-auto hidden lg:block"

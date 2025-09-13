@@ -172,8 +172,7 @@ export default function Founders() {
 
   return (
     <div
-      className="relative bg-cover bg-center py-20"
-      // style={{ backgroundImage: `url(${founderBg})` }}
+      className="relative bg-[#FCFCFC] py-20"
     >
       <div className="relative z-10 mx-auto max-w-7xl px-4 text-[#07507b] sm:px-6 lg:px-8">
         {/* <h2 className="mb-16 text-center text-4xl font-bold">
