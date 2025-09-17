@@ -183,7 +183,7 @@ export default function Founders() {
                 }}
               >
                 <h3 
-                  className="text-4xl lg:text-5xl font-normal text-[#0B132A] leading-tight" 
+                  className="text-4xl lg:text-5xl font-normal text-[#07507B] leading-tight" 
                   style={{ fontFamily: 'Londrina Solid, sans-serif' }}
                 >
                   {founder.title}
@@ -230,6 +230,15 @@ export default function Founders() {
                       className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
                       data-aos="fade-left"
                       data-aos-delay="200"
+                    />
+                  </div>
+                  <div className="relative group -mt-40 -ml-20">
+                    <img
+                      src={founder.imageCenter}
+                      alt={`${founder.title} center`}
+                      className="w-48 h-auto transition-transform duration-300 group-hover:scale-105"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
                     />
                   </div>
                 </div>
@@ -329,6 +338,15 @@ export default function Founders() {
               )}
             </div>
           ))}
+
+          <div className="mt-12 text-center" data-aos="fade-up">
+            <p
+              className="text-4xl font-semibold"
+              style={{ fontFamily: 'Syne, sans-serif', color: '#292F42' }}
+            >
+              AND MANY MORE
+            </p>
+          </div>
         </div>
       </div>
     </div>
