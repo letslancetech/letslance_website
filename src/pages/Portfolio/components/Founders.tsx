@@ -6,89 +6,89 @@ import { FaLinkedin as FaLinkedinRaw } from "react-icons/fa";
 const founders = [
   {
     number: "01",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/marketers_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/marketers_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/marketers_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/marketers_right.png",
     title: "MarketersClique",
     description:
       "MarketersClique is a community-based platform designed for social media marketers to connect, learn, and grow, leveraging AI-powered tools to provide a personalized experience and data-driven insights. It offers a space for freelancers, agency professionals, and strategists to engage in expert-led discussions and access curated resources. The platform is designed to help marketers overcome challenges, accelerate their learning with practical, AI-enhanced insights, and stay ahead of the curve in the ever-evolving social media landscape.",
   },
   {
     number: "02",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/tps_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/tps_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/tps_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/tps_right.png",
     title: "THE PLANET RESERVE ",
     description:
       "The Planet Reserve is a technology-driven carbon registry that empowers businesses, governments, and individuals to reduce carbon emissions. It focuses on nature-based climate action programs like reforestation and sustainable agriculture to restore the environment. The organization also emphasizes community involvement and provides a transparent registry system for carbon credit transactions.",
   },
   {
     number: "03",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/silisoul_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/silisoul_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/silisoul_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/silisoul_right.png",
     title: "SILISOUL ",
     description:
       "Silisoul is a streetwear brand that offers a range of clothing for both men and women. Their collection includes oversized t-shirts, joggers, sweatshirts, and cargo trousers. They focus on relaxed and comfortable fits, with many items featuring graphic prints.",
   },
   {
     number: "04",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/goamigo_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/goamigo_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/goamigo_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/goamigo_right.png",
     title: "GoAmigo",
     description:
       "GoAmigo is a comprehensive bike rental platform that connects users with nearby rental dealers, providing a seamless booking experience for users and an efficient management system for bike dealers. The platform is designed to operate as a two-sided marketplace.",
   },
   {
     number: "05",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/fantom_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/fantom_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/fantom_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/fantom_right.png",
     title: "Fantom ",
     description:
       "Fantom is a high-performance, scalable, and secure contract platform. It is designed to overcome the limitations of previous generation blockchain platforms. Fantom's a BFT consensus mechanism allows it to be much faster and cheaper than older technologies, while also being highly secure.",
   },
   {
     number: "06",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/dropigo_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/dropigo_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/dropigo_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/dropigo_right.png",
     title: "DropiGo",
     description:
       "DropiGo is an AI-powered, on-demand delivery platform for the Canadian market, offering a seamless and transparent experience for customers and a reliable income source for delivery agents. Using AI for route optimization and real-time updates, DropiGo aims to solve common delivery challenges and become Canada's top choice for deliveries.",
   },
   {
     number: "07",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/finzo_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/finzo_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/finzo_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/finzo_right.png",
     title: "Finzo ",
     description:
       "Finzo is a comprehensive digital banking platform for the Indian market, focused on delivering a secure and modern financial experience. It allows users to open an account in minutes, conduct seamless UPI payments, and manage utility recharges. The platform also offers unique products like high-interest 'Smart Fixed Deposits' and an agent program for earning commissions through referrals.",
   },
   {
     number: "08",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/animeta_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/animeta_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/animeta_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/animeta_right.png",
     title: "Animeta",
     description:
       "Animeta is an intelligent livestock healthcare app developed by LetsLance to empower farmers with quick and accurate animal disease diagnosis. The client required customized diagnostic flows for different animal types, a robust database for storing diverse conditions, and an easy-to-use interface suitable for rural connectivity. To meet these needs, we implemented PostgreSQL for efficient condition tracking, built real-time chatbot support for instant assistance, and designed a responsive, user-friendly interface that works seamlessly in low-bandwidth environments.",
   },
   {
     number: "09",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/tms_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/tms_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/tms_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/tms_right.png",
     title: "The MBBS Planet",
     description:
       "LetsLance created the MBBS Planet, a comprehensive NEET counselling platform to simplify the medical admission journey for aspiring students. The client sought an AI-powered system capable of delivering accurate college predictions and flawless choice filling. We delivered a robust solution featuring intelligent predictors, real-time mentorship, and personalised counselling tools, offering end-to-end support that has earned the trust of thousands of medical aspirants across the country.",
   },
   {
     number: "10",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/enhancept_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/enhancept_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/enhancept_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/enhancept_right.png",
     title: "Enhance PT",
     description:
       "Enhance PT is a personalized fitness and wellness platform built to support seniors, new mothers, and those recovering from injuries. The client needed age-specific programs and a safe, supportive training environment. We delivered a human-first solution led by certified trainers, offering tailored programs like senior mobility, pre/post-natal fitness, and recovery training. Backed by Fitness Australia standards, Enhance PT promotes progress without judgment—fostering a truly inclusive fitness community.",
   },
   {
     number: "11",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/ideavault_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/ideavault_right.png",
-    imageCenter: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/ideavault_center.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/ideavault_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/ideavault_right.png",
+    imageCenter: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/ideavault_center.png",
     title: "Ideavault",
     description:
       "Ideavault is a modern investment platform crafted to simplify US stock investing for the Hong Kong market. The client aimed to merge expert investment strategies with the accessibility of fractional investing. We built a seamless, user-friendly solution featuring professionally managed portfolios, dividend tracking, and real-time updates—empowering both novice and seasoned investors to make informed, confident decisions.",
@@ -96,33 +96,33 @@ const founders = [
   },
   {
     number: "12",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/krishiyan_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/krishiyan_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/krishiyan_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/krishiyan_right.png",
     title: "KrishiYan",
     description:
       "KrishiYan is a comprehensive agri-tech platform developed by LetsLance to empower farmers and FPOs by digitizing farm operations and improving market access. The client required a centralized solution to manage clustering, training, procurement, and logistics seamlessly. We delivered a cloud-powered mobile-web dashboard ecosystem integrated with local hubs—ensuring real-time connectivity between buyers, operations, and continuous farmer education across regions.",
   },
   {
     number: "13",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/bigwig_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/bigwig_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/bigwig_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/bigwig_right.png",
     title: "Big Wig",
     description:
       "Big Wig is a high-performance plywood manufacturing solution developed by LetsLance to support modern construction needs with strength, precision, and export-ready quality. The client required scalable production for various plywood types, consistent finish, and ISO-certified quality control. To meet these goals, we set up advanced conveyor assembly lines, installed jumbo paper impregnated plants for a mirror-like finish, and implemented automated cutting tools, ensuring flawless manufacturing, perfect sizing, and global market readiness.",
   },
   {
     number: "14",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/roarink_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/roarink_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/roarink_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/roarink_right.png",
     title: "Roarink",
     description:
       "Roarink is a dynamic political engagement platform built to transform how politicians connect with citizens in real time. The client requested a responsive solution to break down traditional communication barriers and foster more transparent dialogue. We developed a robust app ecosystem using Firebase, featuring live updates, personalized user profiles, and intuitive engagement tools—engineered to handle high user volumes seamlessly, even during peak political events.",
   },
   {
     number: "15",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/organic_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/organic_right.png",
-    imageCenter: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/organic_bottom.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/organica_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/organica_right.png",
+    imageCenter: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/organic_bottom.png",
     title: "Organics Mantra",
     description:
       "Organics Mantra is a sustainable farm-to-door delivery platform designed to provide fresh, organic produce to consumers across Hyderabad. The project focused on ensuring traceable sourcing from local farmers, seamless app-based ordering, and eco-conscious logistics. We enabled a smooth user experience with seasonal offers, loyalty rewards, and simplified order management. The system also supports backend tools for farm evaluation, real-time inventory updates, and surprise audits to maintain high purity standards.",
@@ -130,16 +130,16 @@ const founders = [
   },
   {
     number: "16",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/gridflow_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/gridflow_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/gridflow_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/gridflow_right.png",
     title: "GridFlow",
     description:
       "GridFlow is a smart EV charging platform developed by LetsLance to revolutionize sustainable mobility by tackling the infrastructure gap in electric vehicle adoption. The client wanted a seamless experience for EV drivers, a centralized dashboard for operators, and customizable tools for fleet and property managers. To address these goals, we built a robust, real-time monitoring system, integrated smart charging schedules, enabled payment processing, and developed a white-label app platform—delivering accessible, reliable, and intelligent EV charging solutions across global markets.",
   },
   {
     number: "17",
-    imageLeft: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/bu_left.png",
-    imageRight: "https://finzo-docs.s3.us-east-1.amazonaws.com/letslance-website/bu_right.png",
+    imageLeft: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/bu_left.png",
+    imageRight: "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/bu_right.png",
     title: "Business Unlimited",
     description:
       "Business Unlimited is a tech-driven coaching platform created by LetsLance to support entrepreneurs and professionals in achieving structured personal and business growth. The client needed a comprehensive system that could unify key growth areas into one seamless experience. We delivered a platform that blends proven global coaching methodologies with intuitive tools for wealth creation, team leadership, and time management—empowering users to master their full growth journey in one place.",

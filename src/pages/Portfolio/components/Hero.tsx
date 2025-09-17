@@ -1,5 +1,4 @@
-import heroBg from "../../../assets/portfolio/hero.png";
-import React from "react";
+const heroBg = "https://letslance-portfolio.s3.ap-south-1.amazonaws.com/image.png";
 
 export default function Hero() {
   return (
