@@ -195,8 +195,6 @@ export default function Founders() {
                   {founder.number}
                 </span>
               </div>
-
-              {/* Conditional Layout Based on Image Count */}
               {founder.ideavault ? (
                 <div className="flex flex-col lg:flex-row">
                 {/* Left Column - Text and Left Image */}
@@ -232,7 +230,8 @@ export default function Founders() {
                       data-aos-delay="200"
                     />
                   </div>
-                  <div className="relative group -mt-40 -ml-20">
+                  {/* Center Image - Hidden on mobile, visible on desktop */}
+                  <div className="relative group -mt-40 -ml-20 hidden lg:block">
                     <img
                       src={founder.imageCenter}
                       alt={`${founder.title} center`}
@@ -243,60 +242,60 @@ export default function Founders() {
                   </div>
                 </div>
               </div>
-               ) : founder.organic ? (
-                 // Organics Mantra Layout: Left/Right columns on top, center image at bottom with left alignment
-                 <div className="p-8">
-                   {/* Left and Right Columns at Top */}
-                   <div className="flex flex-col lg:flex-row mb-8">
-                     {/* Left Column - Text and Left Image */}
-                     <div className="flex-1 p-4 lg:pr-8">
-                       <p 
-                         className="text-sm leading-relaxed mb-8" 
-                         style={{ 
-                           fontFamily: 'Syne, sans-serif',
-                           color: '#1F1F1FD9'
-                         }}
-                       >
-                         {founder.description}
-                       </p>
-                       
-                       {/* Left Image */}
-                       <div className="relative group ml-12">
-                         <img
-                           src={founder.imageLeft}
-                           alt={`${founder.title} left`}
-                           className="w-64 h-auto transition-transform duration-300 group-hover:scale-105"
-                           data-aos="fade-right"
-                           data-aos-delay="100"
-                         />
-                       </div>
-                     </div>
+              ) : founder.organic ? (
+                // Organics Mantra Layout: Left/Right columns on top, center image at bottom with left alignment
+                <div className="p-8">
+                  {/* Left and Right Columns at Top */}
+                  <div className="flex flex-col lg:flex-row mb-8">
+                    {/* Left Column - Text and Left Image */}
+                    <div className="flex-1 p-4 lg:pr-8">
+                      <p 
+                        className="text-sm leading-relaxed mb-8" 
+                        style={{ 
+                          fontFamily: 'Syne, sans-serif',
+                          color: '#1F1F1FD9'
+                        }}
+                      >
+                        {founder.description}
+                      </p>
+                      
+                      {/* Left Image */}
+                      <div className="relative group ml-0 lg:ml-12">
+                        <img
+                          src={founder.imageLeft}
+                          alt={`${founder.title} left`}
+                          className="w-full lg:w-64 h-auto transition-transform duration-300 group-hover:scale-105"
+                          data-aos="fade-right"
+                          data-aos-delay="100"
+                        />
+                      </div>
+                    </div>
 
-                     {/* Right Column - Right Image */}
-                     <div className="flex-1 p-4 lg:pl-8">
-                       <div className="relative group">
-                         <img
-                           src={founder.imageRight}
-                           alt={`${founder.title} right`}
-                           className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-                           data-aos="fade-left"
-                           data-aos-delay="200"
-                         />
-                       </div>
-                     </div>
-                   </div>
+                    {/* Right Column - Right Image */}
+                    <div className="flex-1 p-4 lg:pl-8">
+                      <div className="relative group">
+                        <img
+                          src={founder.imageRight}
+                          alt={`${founder.title} right`}
+                          className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                          data-aos="fade-left"
+                          data-aos-delay="200"
+                        />
+                      </div>
+                    </div>
+                  </div>
 
-                   {/* Center Image at Bottom - Full Width */}
-                   <div className="relative group -mt-48">
-                     <img
-                       src={founder.imageCenter}
-                       alt={`${founder.title} center`}
-                       className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-                       data-aos="fade-up"
-                       data-aos-delay="300"
-                     />
-                   </div>
-                 </div>
+                  {/* Center Image at Bottom - Hidden on mobile, visible on desktop */}
+                  <div className="relative group -mt-0 lg:-mt-48 hidden lg:block">
+                    <img
+                      src={founder.imageCenter}
+                      alt={`${founder.title} center`}
+                      className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    />
+                  </div>
+                </div>
               ) : (
                 // Two Column Layout for Other Projects
                 <div className="flex flex-col lg:flex-row">
