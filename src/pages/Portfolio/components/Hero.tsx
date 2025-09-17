@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative w-full bg-[#FCFCFC] border-l-[8px] md:border-l-[16px] border-[#292F42] rounded-tl-[10px] md:rounded-tl-[20px] rounded-bl-[10px] md:rounded-bl-[20px]">
 
       {/* Main content container */}
-      <div className="flex flex-col lg:flex-row h-full items-center justify-center gap-6 lg:gap-6 px-4 md:px-2 py-8 md:py-16">
+      <div className="flex flex-col lg:flex-row h-full items-center justify-center gap-6 lg:gap-12 px-4 md:px-8 lg:px-16 py-8 md:py-16 max-w-7xl mx-auto">
         {/* Left side - Image (40% width) */}
         <div className="w-full lg:w-2/5 lg:flex lg:justify-end order-2 lg:order-1">
           <div className="relative w-full lg:w-auto">
