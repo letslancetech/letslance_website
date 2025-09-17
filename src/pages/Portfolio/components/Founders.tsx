@@ -238,8 +238,9 @@ export default function Founders() {
 
               {/* Conditional Layout Based on Image Count */}
               {founder.ideavault ? (
-                // Three Image Layout for Ideavault and Organics Mantra
-                <div className="p-8">
+                <div className="flex flex-col lg:flex-row">
+                {/* Left Column - Text and Left Image */}
+                <div className="flex-1 p-8">
                   <p 
                     className="text-sm leading-relaxed mb-8" 
                     style={{ 
@@ -249,32 +250,58 @@ export default function Founders() {
                   >
                     {founder.description}
                   </p>
-                  
-                  {/* Three Image Grid Layout */}
-                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    {/* Left Image */}
+                  <div className="relative group">
+                    <img
+                      src={founder.imageLeft}
+                      alt={`${founder.title} left`}
+                      className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                      data-aos="fade-right"
+                      data-aos-delay="100"
+                    />
+                  </div>
+                </div>
+
+                {/* Right Column - Right Image */}
+                <div className="flex-1 p-4">
+                  <div className="relative group">
+                    <img
+                      src={founder.imageRight}
+                      alt={`${founder.title} right`}
+                      className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                      data-aos="fade-left"
+                      data-aos-delay="200"
+                    />
+                  </div>
+                </div>
+              </div>
+               ) : founder.organic ? (
+                 // Organics Mantra Layout: Left/Right images on top, center image spanning full width below
+                 <div>
+                 <div className="flex flex-col lg:flex-row">
+                  {/* Left Column - Text and Left Image */}
+                  <div className="flex-1 p-8">
+                    <p 
+                      className="text-sm leading-relaxed mb-8" 
+                      style={{ 
+                        fontFamily: 'Syne, sans-serif',
+                        color: '#1F1F1FD9'
+                      }}
+                    >
+                      {founder.description}
+                    </p>
                     <div className="relative group">
                       <img
                         src={founder.imageLeft}
                         alt={`${founder.title} left`}
-                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                        className="w-40 h-auto transition-transform duration-300 group-hover:scale-105"
                         data-aos="fade-right"
                         data-aos-delay="100"
                       />
                     </div>
+                  </div>
 
-                    {/* Center Image */}
-                    <div className="relative group">
-                      <img
-                        src={founder.imageCenter}
-                        alt={`${founder.title} center`}
-                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-                        data-aos="fade-up"
-                        data-aos-delay="150"
-                      />
-                    </div>
-
-                    {/* Right Image */}
+                  {/* Right Column - Right Image */}
+                  <div className="flex-1 p-4">
                     <div className="relative group">
                       <img
                         src={founder.imageRight}
@@ -286,55 +313,17 @@ export default function Founders() {
                     </div>
                   </div>
                 </div>
-               ) : founder.organic ? (
-                 // Organics Mantra Layout: Left/Right images on top, center image spanning full width below
-                 <div className="p-8">
-                   <p 
-                     className="text-sm leading-relaxed mb-8" 
-                     style={{ 
-                       fontFamily: 'Syne, sans-serif',
-                       color: '#1F1F1FD9'
-                     }}
-                   >
-                     {founder.description}
-                   </p>
-                   
-                   {/* Top Row - Left and Right Images */}
-                   <div className="flex flex-col lg:flex-row gap-6 mb-6">
-                     {/* Left Image */}
-                     <div className="flex-1 relative group">
-                       <img
-                         src={founder.imageLeft}
-                         alt={`${founder.title} left`}
-                         className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-                         data-aos="fade-right"
-                         data-aos-delay="100"
-                       />
-                     </div>
-
-                     {/* Right Image */}
-                     <div className="flex-1 relative group">
-                       <img
-                         src={founder.imageRight}
-                         alt={`${founder.title} right`}
-                         className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-                         data-aos="fade-left"
-                         data-aos-delay="200"
-                       />
-                     </div>
-                   </div>
-
-                   {/* Bottom Row - Center Image (Full Width) */}
-                   <div className="relative group">
-                     <img
-                       src={founder.imageCenter}
-                       alt={`${founder.title} center`}
-                       className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-                       data-aos="fade-up"
-                       data-aos-delay="300"
-                     />
-                   </div>
-                 </div>
+                {/* what if we paste the center image here and the image will show up from here, like its the bottom part of the image */}
+                <div className="relative group ">
+                      <img
+                        src={founder.imageCenter}
+                        alt={`${founder.title} center`}
+                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                      />
+                    </div>
+                </div>
               ) : (
                 // Two Column Layout for Other Projects
                 <div className="flex flex-col lg:flex-row">
