@@ -14,18 +14,18 @@ import krishiyan_left from "../../../assets/portfolio/krishiyan_left.png";
 import krishiyan_right from "../../../assets/portfolio/krishiyan_right.png";
 import Ideavault_left from "../../../assets/portfolio/ideavault_left.png";
 import Ideavault_right from "../../../assets/portfolio/ideavault_right.png";
+import Ideavault_center from "../../../assets/portfolio/ideavault_center.png";
 import roarink_left from "../../../assets/portfolio/roarink_left.png";
 import roarink_right from "../../../assets/portfolio/roarink_right.png";
 import businessUnlimited_left from "../../../assets/portfolio/bu_left.png";
 import businessUnlimited_right from "../../../assets/portfolio/bu_right.png";
 import EnhancePT_left from "../../../assets/portfolio/enhancept_left.png";
 import EnhancePT_right from "../../../assets/portfolio/enhancept_right.png";
-import Natours_left from "../../../assets/portfolio/natours_left.png";
-import Natours_right from "../../../assets/portfolio/natours_right.png";
 import BigwigPly_left from "../../../assets/portfolio/bigwig_left.png";
 import BigwigPly_right from "../../../assets/portfolio/bigwig_right.png";
 import Mantra_left from "../../../assets/portfolio/organic_left.png";
 import Mantra_right from "../../../assets/portfolio/organic_right.png";
+import Mantra_center from "../../../assets/portfolio/organic_bottom.png";
 import GridFlow_left from "../../../assets/portfolio/gridflow_left.png";
 import GridFlow_right from "../../../assets/portfolio/gridflow_right.png";
 import MarketersClique_left from "../../../assets/portfolio/marketers_left.png";
@@ -128,9 +128,11 @@ const founders = [
     number: "11",
     imageLeft: Ideavault_left,
     imageRight: Ideavault_right,
+    imageCenter: Ideavault_center,
     title: "Ideavault",
     description:
       "Ideavault is a modern investment platform crafted to simplify US stock investing for the Hong Kong market. The client aimed to merge expert investment strategies with the accessibility of fractional investing. We built a seamless, user-friendly solution featuring professionally managed portfolios, dividend tracking, and real-time updates—empowering both novice and seasoned investors to make informed, confident decisions.",
+    ideavault: true,
   },
   {
     number: "12",
@@ -160,9 +162,11 @@ const founders = [
     number: "15",
     imageLeft: Mantra_left,
     imageRight: Mantra_right,
+    imageCenter: Mantra_center,
     title: "Organics Mantra",
     description:
       "Organics Mantra is a sustainable farm-to-door delivery platform designed to provide fresh, organic produce to consumers across Hyderabad. The project focused on ensuring traceable sourcing from local farmers, seamless app-based ordering, and eco-conscious logistics. We enabled a smooth user experience with seasonal offers, loyalty rewards, and simplified order management. The system also supports backend tools for farm evaluation, real-time inventory updates, and surprise audits to maintain high purity standards.",
+    organic: true,
   },
   {
     number: "16",
@@ -196,9 +200,6 @@ export default function Founders() {
       className="relative bg-[#FCFCFC] py-20"
     >
       <div className="relative z-10 mx-auto max-w-7xl px-4 text-[#07507b] sm:px-6 lg:px-8">
-        {/* <h2 className="mb-16 text-center text-4xl font-bold">
-          The Visionaries Behind LetsLance dfdfdf
-        </h2> */}
 
         <div className="space-y-16">
           {founders.map((founder, index) => (
@@ -235,10 +236,10 @@ export default function Founders() {
                 </span>
               </div>
 
-              {/* Two Column Layout */}
-              <div className="flex flex-col lg:flex-row">
-                {/* Left Column - Text and Left Image */}
-                <div className="flex-1 p-8">
+              {/* Conditional Layout Based on Image Count */}
+              {founder.ideavault ? (
+                // Three Image Layout for Ideavault and Organics Mantra
+                <div className="p-8">
                   <p 
                     className="text-sm leading-relaxed mb-8" 
                     style={{ 
@@ -249,31 +250,113 @@ export default function Founders() {
                     {founder.description}
                   </p>
                   
-                  {/* Left Image */}
-                  <div className="relative group">
-                    <img
-                      src={founder.imageLeft}
-                      alt={`${founder.title} left`}
-                      className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-                      data-aos="fade-right"
-                      data-aos-delay="100"
-                    />
-                  </div>
-                </div>
+                  {/* Three Image Grid Layout */}
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    {/* Left Image */}
+                    <div className="relative group">
+                      <img
+                        src={founder.imageLeft}
+                        alt={`${founder.title} left`}
+                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                        data-aos="fade-right"
+                        data-aos-delay="100"
+                      />
+                    </div>
 
-                {/* Right Column - Right Image */}
-                <div className="flex-1 p-4">
-                  <div className="relative group">
-                    <img
-                      src={founder.imageRight}
-                      alt={`${founder.title} right`}
-                      className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-                      data-aos="fade-left"
-                      data-aos-delay="200"
-                    />
+                    {/* Center Image */}
+                    <div className="relative group">
+                      <img
+                        src={founder.imageCenter}
+                        alt={`${founder.title} center`}
+                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                      />
+                    </div>
+
+                    {/* Right Image */}
+                    <div className="relative group">
+                      <img
+                        src={founder.imageRight}
+                        alt={`${founder.title} right`}
+                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
+              ) : founder.organic ? (
+                // Two Column Layout like other project where there is bottom image that takes up wholewidth of the component
+                <div className="flex flex-col lg:flex-row">
+                  {/* Left Column - Text and Left Image */}
+                  <div className="flex-1 p-8">
+                    <p 
+                      className="text-sm leading-relaxed mb-8" 
+                      style={{ 
+                        fontFamily: 'Syne, sans-serif',
+                        color: '#1F1F1FD9'
+                      }}
+                    >
+                      {founder.description}
+                    </p>
+                    
+                    {/* Left Image */}
+                    <div className="relative group">
+                      <img
+                        src={founder.imageLeft}
+                        alt={`${founder.title} left`}
+                        className="w-80 h-auto"
+                        data-aos="fade-right"
+                        data-aos-delay="100"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Right Column - Right Image */}
+                  <div className="flex-1 p-4">
+                    <div className="relative group">
+                      <img
+                        src={founder.imageRight}
+                        alt={`${founder.title} right`}
+                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                      />
+                    </div>
+                  </div>
+
+                </div>
+              ) : (
+                // Two Column Layout for Other Projects
+                <div className="flex flex-col lg:flex-row">
+                  {/* Left Column - Text and Left Image */}
+                  <div className="flex-1 p-8">
+                    <p 
+                      className="text-sm leading-relaxed mb-8" 
+                      style={{ 
+                        fontFamily: 'Syne, sans-serif',
+                        color: '#1F1F1FD9'
+                      }}
+                    >
+                      {founder.description}
+                    </p>
+                  </div>
+
+                  {/* Right Column - Right Image */}
+                  <div className="flex-1 p-4">
+                    <div className="relative group">
+                      <img
+                        src={founder.imageRight}
+                        alt={`${founder.title} right`}
+                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
