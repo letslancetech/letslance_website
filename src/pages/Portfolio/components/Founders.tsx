@@ -275,55 +275,59 @@ export default function Founders() {
                 </div>
               </div>
                ) : founder.organic ? (
-                 // Organics Mantra Layout: Left/Right images on top, center image spanning full width below
-                 <div>
-                 <div className="flex flex-col lg:flex-row">
-                  {/* Left Column - Text and Left Image */}
-                  <div className="flex-1 p-8">
-                    <p 
-                      className="text-sm leading-relaxed mb-8" 
-                      style={{ 
-                        fontFamily: 'Syne, sans-serif',
-                        color: '#1F1F1FD9'
-                      }}
-                    >
-                      {founder.description}
-                    </p>
-                    <div className="relative group">
-                      <img
-                        src={founder.imageLeft}
-                        alt={`${founder.title} left`}
-                        className="w-40 h-auto transition-transform duration-300 group-hover:scale-105"
-                        data-aos="fade-right"
-                        data-aos-delay="100"
-                      />
-                    </div>
-                  </div>
+                 // Organics Mantra Layout: Left/Right columns on top, center image at bottom with left alignment
+                 <div className="p-8">
+                   {/* Left and Right Columns at Top */}
+                   <div className="flex flex-col lg:flex-row mb-8">
+                     {/* Left Column - Text and Left Image */}
+                     <div className="flex-1 p-4 lg:pr-8">
+                       <p 
+                         className="text-sm leading-relaxed mb-8" 
+                         style={{ 
+                           fontFamily: 'Syne, sans-serif',
+                           color: '#1F1F1FD9'
+                         }}
+                       >
+                         {founder.description}
+                       </p>
+                       
+                       {/* Left Image */}
+                       <div className="relative group ml-12">
+                         <img
+                           src={founder.imageLeft}
+                           alt={`${founder.title} left`}
+                           className="w-64 h-auto transition-transform duration-300 group-hover:scale-105"
+                           data-aos="fade-right"
+                           data-aos-delay="100"
+                         />
+                       </div>
+                     </div>
 
-                  {/* Right Column - Right Image */}
-                  <div className="flex-1 p-4">
-                    <div className="relative group">
-                      <img
-                        src={founder.imageRight}
-                        alt={`${founder.title} right`}
-                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-                        data-aos="fade-left"
-                        data-aos-delay="200"
-                      />
-                    </div>
-                  </div>
-                </div>
-                {/* what if we paste the center image here and the image will show up from here, like its the bottom part of the image */}
-                <div className="relative group ">
-                      <img
-                        src={founder.imageCenter}
-                        alt={`${founder.title} center`}
-                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-                        data-aos="fade-up"
-                        data-aos-delay="300"
-                      />
-                    </div>
-                </div>
+                     {/* Right Column - Right Image */}
+                     <div className="flex-1 p-4 lg:pl-8">
+                       <div className="relative group">
+                         <img
+                           src={founder.imageRight}
+                           alt={`${founder.title} right`}
+                           className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                           data-aos="fade-left"
+                           data-aos-delay="200"
+                         />
+                       </div>
+                     </div>
+                   </div>
+
+                   {/* Center Image at Bottom - Full Width */}
+                   <div className="relative group -mt-48">
+                     <img
+                       src={founder.imageCenter}
+                       alt={`${founder.title} center`}
+                       className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                       data-aos="fade-up"
+                       data-aos-delay="300"
+                     />
+                   </div>
+                 </div>
               ) : (
                 // Two Column Layout for Other Projects
                 <div className="flex flex-col lg:flex-row">
