@@ -286,47 +286,55 @@ export default function Founders() {
                     </div>
                   </div>
                 </div>
-              ) : founder.organic ? (
-                // Two Column Layout like other project where there is bottom image that takes up wholewidth of the component
-                <div className="flex flex-col lg:flex-row">
-                  {/* Left Column - Text and Left Image */}
-                  <div className="flex-1 p-8">
-                    <p 
-                      className="text-sm leading-relaxed mb-8" 
-                      style={{ 
-                        fontFamily: 'Syne, sans-serif',
-                        color: '#1F1F1FD9'
-                      }}
-                    >
-                      {founder.description}
-                    </p>
-                    
-                    {/* Left Image */}
-                    <div className="relative group">
-                      <img
-                        src={founder.imageLeft}
-                        alt={`${founder.title} left`}
-                        className="w-80 h-auto"
-                        data-aos="fade-right"
-                        data-aos-delay="100"
-                      />
-                    </div>
-                  </div>
+               ) : founder.organic ? (
+                 // Organics Mantra Layout: Left/Right images on top, center image spanning full width below
+                 <div className="p-8">
+                   <p 
+                     className="text-sm leading-relaxed mb-8" 
+                     style={{ 
+                       fontFamily: 'Syne, sans-serif',
+                       color: '#1F1F1FD9'
+                     }}
+                   >
+                     {founder.description}
+                   </p>
+                   
+                   {/* Top Row - Left and Right Images */}
+                   <div className="flex flex-col lg:flex-row gap-6 mb-6">
+                     {/* Left Image */}
+                     <div className="flex-1 relative group">
+                       <img
+                         src={founder.imageLeft}
+                         alt={`${founder.title} left`}
+                         className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                         data-aos="fade-right"
+                         data-aos-delay="100"
+                       />
+                     </div>
 
-                  {/* Right Column - Right Image */}
-                  <div className="flex-1 p-4">
-                    <div className="relative group">
-                      <img
-                        src={founder.imageRight}
-                        alt={`${founder.title} right`}
-                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-                        data-aos="fade-left"
-                        data-aos-delay="200"
-                      />
-                    </div>
-                  </div>
+                     {/* Right Image */}
+                     <div className="flex-1 relative group">
+                       <img
+                         src={founder.imageRight}
+                         alt={`${founder.title} right`}
+                         className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                         data-aos="fade-left"
+                         data-aos-delay="200"
+                       />
+                     </div>
+                   </div>
 
-                </div>
+                   {/* Bottom Row - Center Image (Full Width) */}
+                   <div className="relative group">
+                     <img
+                       src={founder.imageCenter}
+                       alt={`${founder.title} center`}
+                       className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                       data-aos="fade-up"
+                       data-aos-delay="300"
+                     />
+                   </div>
+                 </div>
               ) : (
                 // Two Column Layout for Other Projects
                 <div className="flex flex-col lg:flex-row">
@@ -341,6 +349,15 @@ export default function Founders() {
                     >
                       {founder.description}
                     </p>
+                    <div className="relative group">
+                      <img
+                        src={founder.imageLeft}
+                        alt={`${founder.title} left`}
+                        className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                        data-aos="fade-right"
+                        data-aos-delay="100"
+                      />
+                    </div>
                   </div>
 
                   {/* Right Column - Right Image */}

@@ -21,7 +21,7 @@ export default function Hero() {
         {/* Right side - Text content (60% width) */}
         <div className="w-full lg:w-3/5 lg:flex lg:justify-start order-1 lg:order-2">
           <div className="max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-gray-800 leading-tight mb-4 md:mb-6" style={{ fontFamily: 'League Gothic, Arial Black, sans-serif', letterSpacing: '-0.02em' }}>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-gray-800 leading-tight mb-4 md:mb-6" style={{ fontFamily: 'League Gothic, Arial Black, sans-serif' }}>
               OUR<br />
               PORTFOLIO
             </h1>
