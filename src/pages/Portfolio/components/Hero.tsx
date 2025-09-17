@@ -13,7 +13,7 @@ export default function Hero() {
             <img
               src={heroBg}
               alt="Portfolio showcase"
-              className="w-full max-w-[450px] md:max-w-[600px] lg:w-[600px] h-auto object-cover shadow-lg rounded-lg mx-auto lg:mx-0"
+              className="w-full max-w-[400px] md:max-w-[600px] lg:w-[750px] h-auto object-cover shadow-lg rounded-lg mx-auto lg:mx-0"
             />
           </div>
         </div>
@@ -21,11 +21,11 @@ export default function Hero() {
         {/* Right side - Text content (60% width) */}
         <div className="w-full lg:w-3/5 lg:flex lg:justify-start order-1 lg:order-2">
           <div className="max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl  text-[#292F42] leading-tight mb-4 md:mb-6 tracking-wider" style={{ fontFamily: 'League Gothic, Arial Black, sans-serif' }}>
+            <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-[#292F42] leading-tight mb-4 md:mb-6 tracking-wider" style={{ fontFamily: 'League Gothic, Arial Black, sans-serif' }}>
               OUR<br />
               PORTFOLIO
             </h1>
-            <p className="text-base md:text-lg text-[#292F42] font-regular tracking-wide" style={{ fontFamily: 'Roboto Flex, sans-serif' }}>
+            <p className="text-xl md:text-2xl lg:text-3xl text-[#292F42] font-regular tracking-wide" style={{ fontFamily: 'Roboto Flex, sans-serif' }}>
               Our outcomes speak on our behalf
             </p>
           </div>
