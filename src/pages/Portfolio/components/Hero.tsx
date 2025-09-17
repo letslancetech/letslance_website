@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <section className="relative w-full bg-[#FCFCFC] border-l-[8px] md:border-l-[16px] border-[#292F42] rounded-tl-[10px] md:rounded-tl-[20px] rounded-bl-[10px] md:rounded-bl-[20px]">
 
-      {/* Main content container - MATCHING FOUNDERS */}
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-96">
         <div className="flex flex-col lg:flex-row h-full items-center justify-center gap-6 lg:gap-12 py-8 md:py-16">
           {/* Left side - Image (40% width) */}
           <div className="w-full lg:w-2/5 lg:flex lg:justify-end order-2 lg:order-1">
