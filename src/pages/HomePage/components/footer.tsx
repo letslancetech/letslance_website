@@ -189,11 +189,21 @@ export default function Footer() {
               Follow Us On
             </h4>
             <div className="flex items-center gap-3">
-              <img src={facebook} alt="Facebook" width={24} height={24} />
-              <img src={insta} alt="Instagram" width={24} height={24} />
-              <img src={twitter} alt="Twitter" width={24} height={24} />
-              <img src={youtube} alt="YouTube" width={24} height={24} />
-              <img src={linkedin} alt="LinkedIn" width={24} height={24} />
+              {/* <a href="https://www.facebook.com/letslancehk" target="_blank" rel="noopener noreferrer"> */}
+              {/* <img src={facebook} alt="Facebook" width={24} height={24} /> */}
+              {/* </a> */}
+              {/* <a href="https://www.instagram.com/letslancehk" target="_blank" rel="noopener noreferrer"> */}
+                {/* <img src={insta} alt="Instagram" width={24} height={24} /> */}
+              {/* </a> */}
+              {/* <a href="https://www.twitter.com/letslancehk" target="_blank" rel="noopener noreferrer"> */}
+                {/* <img src={twitter} alt="Twitter" width={24} height={24} /> */}
+              {/* </a> */}
+              {/* <a href="https://www.youtube.com/letslancehk" target="_blank" rel="noopener noreferrer"> */}
+                  {/* <img src={youtube} alt="YouTube" width={24} height={24} /> */}
+              {/* </a> */}
+              <a href="https://www.linkedin.com/company/letslance" target="_blank" rel="noopener noreferrer">
+                <img src={linkedin} alt="LinkedIn" width={24} height={24} />
+              </a>
             </div>
           </div>
         </div>
